@@ -7,7 +7,7 @@ db = client["TruthLens"]
 
 news_collection = db["news"]
 
-async def check_connection():
+async def connect_to_mongo():
     try:
         await client.server_info()
         print("MongoDB connection is successful.")
